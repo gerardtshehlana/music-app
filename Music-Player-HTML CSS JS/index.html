@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+    <title>Music Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div>
+    <div class="hero">
         <nav>
             <img src="images/music_player_icon.png" class="mainpage_logo">
             <h2 class="logo">Music<span>Player</span> </h2>
             <ul>
-                <li><a href="index.html">PlAY LIST</a></li>
+                <li><a href="playlist.html">PlAY LIST</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -27,56 +21,72 @@
             <button type="button">Subscribe</button>
         </nav>
         <br><br><br>
-<br><br>
-   <div class="player">
-       <div class="wrapper">
-           <div class="details">
-               <div class="now-playing">PLAYING x OF y</div>
-               <div class="track-art"></div>
-               <div class="track-name">Track Name</div>
-               <div class="track-artist">Track Artist</div>
-           </div>
+        <center><h1 class="h1_mainpage">Enjoy Your Favourite Music</h1>
+            <br><br>
+        <button>Play Music</button>
+        <button>Download Music</button></center>
+    </div>
 
-           <div class="slider_container">
-               <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                <div class="total-duration">00:00</div>
-           </div>
-
-           <div class="slider_container">
-               <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-                <i class="fa fa-volume-up"></i>
-           </div>
-
-           <div class="buttons">
-               <div class="random-track" onclick="randomTrack()">
-                   <i class="fas fa-random fa-2x" title="random"></i>
-               </div>
-               <div class="prev-track" onclick="prevTrack()">
-                    <i class="fa fa-step-backward fa-2x"></i>
-                </div>
-                <div class="playpause-track" onclick="playpauseTrack()">
-                    <i class="fa fa-play-circle fa-5x"></i>
-                </div>
-                <div class="next-track" onclick="nextTrack()">
-                    <i class="fa fa-step-forward fa-2x"></i>
-                </div>
-                <div class="repeat-track" onclick="repeatTrack()">
-                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
-                </div>
-           </div>
-
-            <div id="wave">
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-            </div>  
-       </div>
-   </div>
+     <div class="playlist_div">
+     <center><h1>PLAY LIST</h1></center> 
+    <div id="container">
+        <div>
+           <h2>Gospel Music</h2>
+            <img src="images/faded.png">
+            <button class="play_button">Play</button>
+            <button class="download_button">Download</button>  
+        </div>
+        <div>
+            <h2>Hip Hop Music</h2>
+            <img src="images/fallingdown.jpg" height="300px">
+            <button class="play_button">Play</button>
+            <button class="download_button">Download</button>
+        </div>
+        <div>
+            <h2 class="h2_regge_div">Regge Music</h2>
+            <img src="images/stay.png" height="300px">
+            <button class="play_button">Play</button>
+            <button class="download_button">Download</button>
+        </div>
+    </div>
+        
+      </div>
+    </div>
+    <br><br><br>
+    
+    <div id="latest_music">
+        <center><h1>GET THE LATEST MUSIC</h1>
+        <label>Sign up to get the Latest Music</label>
+        <input type="text" name="email" placeholder="enter email">
+        <button>Sign Up</button></center><br><br>
+    </div>
+    <br><br><br>
+    <footer>
+        <div id="container">
+            <div>
+               <h1>Useful Links</h1> 
+                <a href="index.html" class="list_footer">PlAY LIST</a><br>
+                <a href="blog.html" class="list_footer">BLOG</a><br>
+                <a href="#" class="list_footer">ABOUT</a><br>
+                <a href="#" class="list_footer">CONTACT</a><br>
+                <a href="#" class="list_footer">SIGN UP</a><br>
+                <a href="#" class="list_footer">LOGIN</a><br>
+            </div>
+            <div id="contact_info">
+                <h1>Contact Info</h1>
+                <h3>+26653907139</h3>
+                <h3>+26658589246</h3>
+                <h3>gerardtshehlana@gmail.com</h3>
+                <h3>Lesotho, Maseru</h3>
+            </div>
+            <div>
+                <h1>Follow Us</h1>
+                <h3>Facebook</h3>
+                <h3>Whatsapp</h3>
+                <h3>linkedIN</h3>
+                <H3></H3>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
